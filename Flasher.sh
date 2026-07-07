@@ -26,7 +26,7 @@ echo "Target: $target"
 echo "THIS WILL ERASE THE TARGET DRIVE ENTIRELY."
 read -rp "Type flash to continue: " confirmation
 
-if [[ "$confirmation" != "flash"]]; then
+if [[ "" != "flash" ]]; then
   echo "Cancelled"
   exit 0
 fi
